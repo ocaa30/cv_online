@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Styling khusus halaman profil --- */
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #2575fc);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      border: 2px solid transparent;
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Layout profil */
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-photo {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .profile-photo img {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo img:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-info {
+      flex: 1 1 400px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .profile-info h2 {
+      margin-top: 0;
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    .profile-info p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #eaeaea;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+    }
+
+    .contact-info i {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      padding: 8px;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+      }
+      .profile-info {
+        width: 90%;
+      }
+    }
+  </style>
+  <!-- CDN ikon Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6df67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Profil Saya</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="pendidikan.html">Pendidikan</a></li>
+        <li><a href="skill.html">Computer Skill</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="profile-photo">
+        <img src="foto.jpg" alt="Foto Profil">
+      </div>
+
+      <div class="profile-info">
+        <h2>Rosalia indah</h2>
+        <p>Mahasiswa Informatika yang bersemangat belajar pengembangan web dan desain UI/UX.  
+           Saya memiliki ketertarikan tinggi pada teknologi modern dan selalu ingin belajar hal baru.</p>
+
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Karawang, Indonesia</p>
+          <p><i class="fas fa-envelope"></i> rosaindahh82@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> 0812-3456-7890</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 | Dibuat dengan 💙 oleh [Rosalia indah]
+  </footer>
+</body>
+</html>
